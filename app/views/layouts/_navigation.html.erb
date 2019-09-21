@@ -1,11 +1,13 @@
 <nav class="navbar navbar-default navbar-expand-lg navbar-dark fixed-top">
-  <%= link_to 'collabfield', root_path, class: "navbar-brand" %>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <%= render 'layouts/navigation/header' %>
+      </div><!-- col-sm-7 -->
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-  </div>
+      <div class="col-sm-5 d-flex">
+        <%= render 'layouts/navigation/collapsible_elements' %>
+      </div><!-- col-sm-5 -->
+    </div><!-- row -->
+  </div><!-- container -->
 </nav>
